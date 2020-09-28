@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-var PORT = process.env.PORT || 8080
+var PORT = process.env.PORT || 8080;
 var path = require('path');
 
 app.get('/', (req, res) => {
