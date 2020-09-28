@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + 'public/home.html'));
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`app listening at http://localhost:${PORT}`)
 })
