@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const port = 8080
+var PORT = process.env.PORT || 8080
 var path = require('path');
 
 app.get('/', (req, res) => {
@@ -8,5 +8,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`app listening at http://localhost:${port}`)
+    console.log(`app listening at http://localhost:${PORT}`)
 })
