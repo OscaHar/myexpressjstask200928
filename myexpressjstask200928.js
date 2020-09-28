@@ -9,6 +9,14 @@ app.get('/', (req, res) => {
     //res.send('Hello World!')
 })
 
+app.get('/home',(req, res) => {
+    res.sendFile(path.join(__dirname + '/home.html'));
+})
+
+app.get('/about',(req, res) => {
+    res.sendFile(path.join(__dirname + '/about.html'));
+})
+
 app.use(express.static('public'));
 
 app.listen(PORT, () => {
